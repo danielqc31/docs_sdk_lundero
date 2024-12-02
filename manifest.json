@@ -1,0 +1,498 @@
+{
+  "source_base_path": "D:/COD/LUNDERO/sdk-net/sdk/.documentacion",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Autenticacion.NetStandard.ClienteAutenticacion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Autenticacion.NetStandard.ClienteAutenticacion.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Autenticacion.NetStandard.ClienteAutenticacionBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Autenticacion.NetStandard.ClienteAutenticacionBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Autenticacion.NetStandard.ClienteAutenticacionConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Autenticacion.NetStandard.ClienteAutenticacionConfig.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Autenticacion.NetStandard.Respuestas.LoginRespuesta.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Autenticacion.NetStandard.Respuestas.LoginRespuesta.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Autenticacion.NetStandard.Respuestas.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Autenticacion.NetStandard.Respuestas.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Autenticacion.NetStandard.Solicitudes.LoginSolicitud.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Autenticacion.NetStandard.Solicitudes.LoginSolicitud.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Autenticacion.NetStandard.Solicitudes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Autenticacion.NetStandard.Solicitudes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Autenticacion.NetStandard.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Autenticacion.NetStandard.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Core.NetStandard.ClienteBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Core.NetStandard.ClienteBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Core.NetStandard.ClienteConfiguracion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Core.NetStandard.ClienteConfiguracion.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Core.NetStandard.ClienteOpciones.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Core.NetStandard.ClienteOpciones.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Core.NetStandard.ClienteUtilitario.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Core.NetStandard.ClienteUtilitario.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Core.NetStandard.Excepciones.ExcepcionServicio.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Core.NetStandard.Excepciones.ExcepcionServicio.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Core.NetStandard.Excepciones.IndicadorError.MotivoError.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Core.NetStandard.Excepciones.IndicadorError.MotivoError.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Core.NetStandard.Excepciones.IndicadorError.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Core.NetStandard.Excepciones.IndicadorError.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Core.NetStandard.Excepciones.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Core.NetStandard.Excepciones.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Core.NetStandard.Respuestas.RespuestaApi-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Core.NetStandard.Respuestas.RespuestaApi-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Core.NetStandard.Respuestas.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Core.NetStandard.Respuestas.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Core.NetStandard.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Core.NetStandard.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Encuesta.NetStandard.ClienteEncuesta.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Encuesta.NetStandard.ClienteEncuesta.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Encuesta.NetStandard.ClienteEncuestaBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Encuesta.NetStandard.ClienteEncuestaBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Encuesta.NetStandard.ClienteEncuestaConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Encuesta.NetStandard.ClienteEncuestaConfig.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Encuesta.NetStandard.Respuestas.Alternativa.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Encuesta.NetStandard.Respuestas.Alternativa.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Encuesta.NetStandard.Respuestas.ContenedorValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Encuesta.NetStandard.Respuestas.ContenedorValue.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Encuesta.NetStandard.Respuestas.Encuesta.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Encuesta.NetStandard.Respuestas.Encuesta.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Encuesta.NetStandard.Respuestas.EncuestaDetalleRespuesta.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Encuesta.NetStandard.Respuestas.EncuestaDetalleRespuesta.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Encuesta.NetStandard.Respuestas.EncuestaGuardadaRespuesta.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Encuesta.NetStandard.Respuestas.EncuestaGuardadaRespuesta.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Encuesta.NetStandard.Respuestas.EncuestaRespuesta.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Encuesta.NetStandard.Respuestas.EncuestaRespuesta.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Encuesta.NetStandard.Respuestas.Opcion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Encuesta.NetStandard.Respuestas.Opcion.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Encuesta.NetStandard.Respuestas.PreguntasEncuesta.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Encuesta.NetStandard.Respuestas.PreguntasEncuesta.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Encuesta.NetStandard.Respuestas.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Encuesta.NetStandard.Respuestas.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Encuesta.NetStandard.Solicitudes.ContenidoDataFormulario.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Encuesta.NetStandard.Solicitudes.ContenidoDataFormulario.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Encuesta.NetStandard.Solicitudes.DataFormulario.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Encuesta.NetStandard.Solicitudes.DataFormulario.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Encuesta.NetStandard.Solicitudes.EjecucionTarea.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Encuesta.NetStandard.Solicitudes.EjecucionTarea.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Encuesta.NetStandard.Solicitudes.EncuestaAGuardarSolicitud.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Encuesta.NetStandard.Solicitudes.EncuestaAGuardarSolicitud.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Encuesta.NetStandard.Solicitudes.EncuestaSolicitud.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Encuesta.NetStandard.Solicitudes.EncuestaSolicitud.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Encuesta.NetStandard.Solicitudes.RespuestaEncuesta.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Encuesta.NetStandard.Solicitudes.RespuestaEncuesta.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Encuesta.NetStandard.Solicitudes.TrabajoEjecucion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Encuesta.NetStandard.Solicitudes.TrabajoEjecucion.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Encuesta.NetStandard.Solicitudes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Encuesta.NetStandard.Solicitudes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Encuesta.NetStandard.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Encuesta.NetStandard.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/autenticacion.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/autenticacion.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/encuesta.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/encuesta.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/instalacion.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/instalacion.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

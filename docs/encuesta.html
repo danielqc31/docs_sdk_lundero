@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Servicio de Encuestas | Lundero SDK </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Servicio de Encuestas | Lundero SDK ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Lundero SDK">
+            Lundero SDK
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="servicio-de-encuestas">Servicio de Encuestas</h1>
+
+<p>Permite interactuar con los servicios de encuestas de Lundero, para poder utilizarlos se necesita el token obtenido con el cliente de autenticación (Login):</p>
+<ul>
+<li><a href="#obtener-la-lista-de-encuestas-por-ruc">Obtener la lista de encuestas por ruc</a>.</li>
+<li><a href="#obtener-el-detalle-de-una-encuesta">Obtener el detalle de una encuesta</a>.</li>
+<li><a href="#guardar-una-encuesta">Guardar una encuesta</a>.</li>
+</ul>
+<h2 id="obtener-la-lista-de-encuestas-por-ruc">Obtener la lista de encuestas por ruc</h2>
+<p>Este servicio obtiene las encuestas asociadas a un RUC.</p>
+<h3 id="detalles-de-integración">Detalles de integración</h3>
+<h4 id="clienteencuesta">ClienteEncuesta</h4>
+<h5 id="obtenerencuestasporrucasyncstring-ruc"><code>ObtenerEncuestasPorRucAsync(string ruc)</code></h5>
+<p>Este método obtiene una lista de encuestas asociadas a un RUC de manera asincrónica.</p>
+<ul>
+<li><p><strong>Parámetros</strong>:</p>
+<ul>
+<li><code>ruc</code> (string): El RUC para el cual se desean obtener las encuestas.</li>
+</ul>
+</li>
+<li><p><strong>Retorno</strong>:</p>
+<ul>
+<li><code>Task&lt;List&lt;EncuestaRespuesta&gt;&gt;</code> (<a href="#encuestarespuesta">EncuestaRespuesta</a>): Una tarea que representa la operación asincrónica. El resultado contiene una lista de encuestas.</li>
+</ul>
+</li>
+</ul>
+<h5 id="encuestarespuesta">EncuestaRespuesta</h5>
+<ul>
+<li><strong>IdFormulario</strong> (int): Identificador del formulario de la encuesta.</li>
+<li><strong>Version</strong> (int): Versión del formulario de la encuesta.</li>
+<li><strong>IdEjecucion</strong> (int): Identificador de la ejecución de la encuesta.</li>
+<li><strong>CodigoAlterno</strong> (string): Código alterno de la encuesta.</li>
+<li><strong>Nombre</strong> (string): Nombre de la encuesta.</li>
+<li><strong>Descripcion</strong> (string): Descripción de la encuesta.</li>
+<li><strong>Cuerpo</strong> (string): Cuerpo de la encuesta.</li>
+<li><strong>TipoFormulario</strong> (string): Tipo de formulario de la encuesta.</li>
+<li><strong>FormularioAnterior</strong> (string): Formulario anterior de la encuesta.</li>
+<li><strong>VersionAnterior</strong> (int?): Versión anterior del formulario de la encuesta.</li>
+<li><strong>FechaRegistro</strong> (string): Fecha de registro de la encuesta.</li>
+<li><strong>EstadoFormulario</strong> (string): Estado del formulario de la encuesta.</li>
+<li><strong>FlagConsultaDinamica</strong> (bool?): Valor que indica si la consulta es dinámica.</li>
+<li><strong>NumPreguntas</strong> (int): Número de preguntas de la encuesta.</li>
+<li><strong>DuracionEncuesta</strong> (int): Duración de la encuesta.</li>
+<li><strong>IdTarea</strong> (int): Identificador de la tarea asociada a la encuesta.</li>
+<li><strong>IdTrabajo</strong> (int): Identificador del trabajo asociado a la encuesta.</li>
+<li><strong>IdFlujo</strong> (int): Identificador del flujo asociado a la encuesta.</li>
+<li><strong>IdFormularioMaster</strong> (int): Identificador del formulario maestro de la encuesta.</li>
+<li><strong>IdParticipante</strong> (int): Identificador del participante de la encuesta.</li>
+<li><strong>IdPrioridadTarea</strong> (int): Identificador de la prioridad de la tarea asociada a la encuesta.</li>
+<li><strong>IdEstructura</strong> (int): Identificador de la estructura asociada a la encuesta.</li>
+<li><strong>IdEstructuraSec</strong> (int) Identificador de la estructura secundaria asociada a la encuesta.</li>
+<li><strong>Contenido</strong> (string): Contenido de la encuesta.</li>
+<li><strong>NumeroTrabajo</strong> (string): Número de trabajo asociado a la encuesta.</li>
+<li><strong>EncuestaCompletada</strong> (int): Valor que indica si la encuesta está completada.</li>
+</ul>
+<h3 id="ejemplo">Ejemplo</h3>
+<pre><code class="lang-csharp">using LunderoSDK.Encuesta.NetStandard;
+using LunderoSDK.Encuesta.NetStandard.Solicitudes;
+
+var ruc = &quot;20605565655&quot;;
+
+var configuracion = new ClienteEncuestaConfig
+{
+	Url = &quot;https://apisigerproducecloud.iamauta.com&quot;,
+	Autorizacion = &quot;token&quot;
+};
+
+var cliente = new ClienteEncuesta(configuracion);
+
+var respuesta = await cliente.ObtenerEncuestasPorRucAsync(ruc);
+</code></pre>
+<h2 id="obtener-el-detalle-de-una-encuesta">Obtener el detalle de una encuesta</h2>
+<p>Este servicio obtiene las preguntas y alternativas de una determinada encuesta, para esto se necesita enviar los siguientes datos:</p>
+<ul>
+<li>El identificador del formulario (IdFormulario).</li>
+<li>La versión del formuario (Version).</li>
+<li>El idenfificador de la ejecución (IdEjecucion).</li>
+</ul>
+<h3 id="detalles-de-integración-1">Detalles de integración</h3>
+<h4 id="clienteencuesta-1">ClienteEncuesta</h4>
+<h5 id="obtenerencuestaasyncencuestasolicitud-encuesta"><code>ObtenerEncuestaAsync(EncuestaSolicitud encuesta)</code></h5>
+<p>Este método obtiene los detalles de una encuesta específica de manera asincrónica.</p>
+<ul>
+<li><p><strong>Parámetros</strong>:</p>
+<ul>
+<li><code>encuesta</code> (<a href="#encuestasolicitud">EncuestaSolicitud</a>): La solicitud que contiene los parámetros necesarios para obtener la encuesta.</li>
+</ul>
+</li>
+<li><p><strong>Retorno</strong>:</p>
+<ul>
+<li><code>Task&lt;[EncuestaDetalleRespuesta]&gt;</code> (<a href="#encuestadetallerespuesta">EncuestaDetalleRespuesta</a>): Una tarea que representa la operación asincrónica. El resultado contiene los detalles de la encuesta.</li>
+</ul>
+</li>
+</ul>
+<h5 id="encuestasolicitud">EncuestaSolicitud</h5>
+<ul>
+<li><strong>IdFormulario</strong> (int): Identificador del formulario de la encuesta.</li>
+<li><strong>Version</strong> (int): Versión del formulario de la encuesta.</li>
+<li><strong>IdEjecucion</strong> (int): Identificador de la ejecución de la encuesta.</li>
+</ul>
+<h5 id="encuestadetallerespuesta">EncuestaDetalleRespuesta</h5>
+<ul>
+<li><strong>Encuesta</strong> (<a href="#encuesta">Encuesta</a>): Detalles de la encuesta.</li>
+</ul>
+<h5 id="encuesta">Encuesta</h5>
+<ul>
+<li><strong>IdFormulario</strong> (int): Identificador del formulario de la encuesta.</li>
+<li><strong>Version</strong> (int): Versión del formulario de la encuesta.</li>
+<li><strong>CodigoAlterno</strong> (string): Código alterno de la encuesta.</li>
+<li><strong>Nombre</strong> (string): Nombre de la encuesta.</li>
+<li><strong>Descripcion</strong> (string): Descripción de la encuesta.</li>
+<li><strong>FechaRegistro</strong> (string): Fecha de registro de la encuesta.</li>
+<li><strong>NumPreguntas</strong> (int): Número de preguntas de la encuesta.</li>
+<li><strong>DuracionEncuesta</strong> (int): Duración de la encuesta.</li>
+<li><strong>DescripcionEncuesta</strong> (List<string>): Descripción de la encuesta.</string></li>
+<li><strong>PreguntasEncuesta</strong> (List&lt;<a href="#preguntasencuesta">PreguntasEncuesta</a>&gt;): Lista de preguntas de la encuesta.</li>
+</ul>
+<h5 id="preguntasencuesta">PreguntasEncuesta</h5>
+<ul>
+<li><strong>Nombre</strong> (<a href="#contenedorvalue">ContenedorValue</a>): Nombre de la pregunta.</li>
+<li><strong>Tipo</strong> (<a href="#contenedorvalue">ContenedorValue</a>): Tipo de la pregunta.</li>
+<li><strong>Items</strong> (<a href="#alternativa">Alternativa</a>): Contenedor de las opciones de la pregunta.</li>
+</ul>
+<h5 id="contenedorvalue">ContenedorValue</h5>
+<ul>
+<li><strong>Value</strong> (string): valor.</li>
+</ul>
+<h5 id="alternativa">Alternativa</h5>
+<ul>
+<li><strong>Value</strong> (string): Valor de la alternativa.</li>
+<li><strong>Options</strong> (List&lt;<a href="#opcion">Opcion</a>&gt;): Lista de opciones de la pregunta.</li>
+</ul>
+<h5 id="opcion">Opcion</h5>
+<ul>
+<li><strong>Id</strong> (string): Identificador de la opción.</li>
+<li><strong>Label</strong> (string): Etiqueta de la opción.</li>
+</ul>
+<h3 id="ejemplo-1">Ejemplo</h3>
+<pre><code class="lang-csharp">using LunderoSDK.Encuesta.NetStandard;
+using LunderoSDK.Encuesta.NetStandard.Solicitudes;
+
+var configuracion = new ClienteEncuestaConfig
+{
+	Url = &quot;https://apisigerproducecloud.iamauta.com&quot;,
+	Autorizacion = &quot;token&quot;
+};
+
+var encuestaSolicitud = new EncuestaSolicitud
+{
+    IdFormulario = 940,
+    Version = 1,
+    IdEjecucion = 5052
+};
+
+var cliente = new ClienteEncuesta(configuracion);
+
+var respuesta = await cliente.ObtenerEncuestaAsync(encuestaSolicitud);
+</code></pre>
+<h2 id="guardar-una-encuesta">Guardar una encuesta</h2>
+<p>Este servicio permite guardar las preguntas y alternativas de la encuesta además de los datos enviados en los servicios anteriores.</p>
+<h3 id="detalles-de-integración-2">Detalles de integración</h3>
+<h4 id="clienteencuesta-2">ClienteEncuesta</h4>
+<h5 id="guardarencuestaasyncencuestaaguardarsolicitud-encuesta"><code>GuardarEncuestaAsync(EncuestaAGuardarSolicitud encuesta)</code></h5>
+<p>Este método guarda una encuesta de manera asincrónica.</p>
+<ul>
+<li><p><strong>Parámetros</strong>:</p>
+<ul>
+<li><code>encuesta</code> (<a href="#encuestaaguardarsolicitud">EncuestaAGuardarSolicitud</a>): La solicitud que contiene los datos de la encuesta a guardar.</li>
+</ul>
+</li>
+<li><p><strong>Retorno</strong>:</p>
+<ul>
+<li><code>Task&lt;List&lt;EncuestaGuardadaRespuesta&gt;&gt;</code> (<a href="#encuestaguardadarespuesta">EncuestaGuardadaRespuesta</a>): Una tarea que representa la operación asincrónica. El resultado contiene una lista de respuestas de encuestas guardadas.</li>
+</ul>
+</li>
+</ul>
+<h5 id="encuestaaguardarsolicitud">EncuestaAGuardarSolicitud</h5>
+<ul>
+<li><strong>ConCopia</strong> (List<string>): Lista de destinatarios con copia.</string></li>
+<li><strong>DataFormulario</strong> (List&lt;<a href="#dataformulario">DataFormulario</a>&gt;): Lista de datos del formulario.</li>
+<li><strong>RespuestaEncuesta</strong> (List&lt;<a href="#respuestaencuesta">RespuestaEncuesta</a>&gt;): Lista de respuestas de la encuesta.</li>
+<li><strong>TrabajoEjecucion</strong> (<a href="#trabajoejecucion">TrabajoEjecucion</a>):  Detalles de la ejecución del trabajo.</li>
+<li><strong>EjecucionTarea</strong> (<a href="#ejecuciontarea">EjecucionTarea</a>):  Detalles de la ejecución de la tarea.</li>
+<li><strong>TrabajoArchivos</strong> (List<string>): Lista de archivos del trabajo.</string></li>
+<li><strong>IdTareaAnterior</strong> (int): Identificador de la tarea anterior.</li>
+<li><strong>IdEstructura</strong> (int): Identificador de la estructura.</li>
+</ul>
+<h5 id="dataformulario">DataFormulario</h5>
+<ul>
+<li><strong>Contenido</strong> (<a href="#contenidodataformulario">ContenidoDataFormulario</a>): Contenido del formulario.</li>
+<li><strong>IdFormularioMaster</strong> (int): Identificador del formulario maestro.</li>
+<li><strong>ContenidoStr</strong> (string): Obtiene una representación en cadena del contenido del formulario.</li>
+</ul>
+<h5 id="contenidodataformulario">ContenidoDataFormulario</h5>
+<ul>
+<li><strong>Campos</strong> (Dictionary&lt;string, object&gt;):  Campos del formulario.</li>
+<li><strong>Adjuntos</strong> (List<string>): Lista de adjuntos del formulario.</string></li>
+<li><strong>EstadoFormulario</strong> (Dictionary&lt;string, object&gt;): Estado del formulario.</li>
+</ul>
+<h5 id="respuestaencuesta">RespuestaEncuesta</h5>
+<ul>
+<li><strong>Num</strong> (string): Número de la respuesta.</li>
+<li><strong>Respuesta</strong> (List<string>): Lista de respuestas.</string></li>
+</ul>
+<h5 id="trabajoejecucion">TrabajoEjecucion</h5>
+<ul>
+<li><strong>IdEjecucion</strong> (int): Identificador de la ejecución.</li>
+<li><strong>IdTrabajo</strong> (int): Identificador del trabajo.</li>
+</ul>
+<h5 id="ejecuciontarea">EjecucionTarea</h5>
+<ul>
+<li><strong>Comentario</strong> (string): Comentario de la tarea.</li>
+<li><strong>Flujos</strong> (List<int>): Lista de flujos de la tarea.</int></li>
+<li><strong>IdEjecucion</strong> (int): Identificador de la ejecución.</li>
+<li><strong>TipoDerivacion</strong> (string): Tipo de derivación de la tarea.</li>
+<li><strong>IdTarea</strong> (int?): Identificador de la tarea.</li>
+<li><strong>IdParticipante</strong> (int): Identificador del participante.</li>
+<li><strong>PrioridadTarea</strong> (int): Prioridad de la tarea.</li>
+<li><strong>Estructuras</strong> (List<int>): Lista de estructuras de la tarea.</int></li>
+</ul>
+<h5 id="encuestaguardadarespuesta">EncuestaGuardadaRespuesta</h5>
+<ul>
+<li><strong>ReferenciaVersion</strong> (string): Referencia de la versión.</li>
+<li><strong>IdEjecucion</strong> (int): Identificador de la ejecución.</li>
+<li><strong>ReferenciaCodAlterno</strong> (string): Referencia del código alterno.</li>
+<li><strong>IdTarea</strong> (string): Identificador de la tarea.</li>
+<li><strong>IdArchivo</strong> (int): Identificador del archivo.</li>
+<li><strong>IdReferencia</strong> (string): Identificador de la referencia.</li>
+<li><strong>Nombre</strong> (string): Nombre de la encuesta.</li>
+</ul>
+<h3 id="ejemplo-2">Ejemplo</h3>
+<pre><code class="lang-csharp">using LunderoSDK.Encuesta.NetStandard;
+using LunderoSDK.Encuesta.NetStandard.Solicitudes;
+
+var configuracion = new ClienteEncuestaConfig
+{
+	Url = &quot;https://apisigerproducecloud.iamauta.com&quot;,
+	Autorizacion = &quot;token&quot;
+};
+
+var contenido = new ContenidoDataFormulario
+{
+    Campos = new Dictionary&lt;string, object&gt;
+    {
+        { &quot;etiqueta&quot;, &quot;&quot; },
+        { &quot;en_su_empresa_se_valora_y_se_realizan_esfuerzos_para_contar_con_mas_y_mejor_calidad_de_datos_yo_informacion_.0&quot;, true }
+    }
+};
+
+var encuestaAGuardar = new EncuestaAGuardarSolicitud
+{
+    DataFormulario = new List&lt;DataFormulario&gt;
+    {
+        new DataFormulario
+        {
+            Contenido = contenido,
+            IdFormularioMaster = 582
+        }
+    },
+    RespuestaEncuesta = new List&lt;RespuestaEncuesta&gt;
+    {
+        new RespuestaEncuesta
+        {
+            Num = &quot;1&quot;,
+            Respuesta = new List&lt;string&gt;
+            {
+                &quot;Hay una ALTA disposición al cambio para implementar tecnologías digitales, todos están comprometidos y entusiasmados con la adopción de nuevas tecnologías&quot;
+            }
+        }
+    },
+    TrabajoEjecucion = new TrabajoEjecucion
+    {
+        IdEjecucion = 5052,
+        IdTrabajo = 998
+    },
+    EjecucionTarea = new EjecucionTarea
+    {
+        Comentario = &quot;Comentario&quot;,
+        Flujos = new List&lt;int&gt; { 1819 },
+        IdEjecucion = 5052,
+        TipoDerivacion = &quot;D&quot;,
+        IdTarea = null,
+        IdParticipante = 7756,
+        PrioridadTarea = 32047,
+        Estructuras = new List&lt;int&gt; { 2437 }
+    },
+    IdTareaAnterior = 5886,
+    IdEstructura = 2436
+};
+
+var cliente = new ClienteEncuesta(configuracion);
+
+var respuesta = await cliente.GuardarEncuestaAsync(encuestaAGuardar);
+</code></pre>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
