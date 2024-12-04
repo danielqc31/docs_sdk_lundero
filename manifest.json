@@ -12,6 +12,46 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Autenticacion.AES2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Autenticacion.AES2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Autenticacion.ClienteAutenticacion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Autenticacion.ClienteAutenticacion.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Autenticacion.ClienteAutenticacionBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Autenticacion.ClienteAutenticacionBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Autenticacion.ClienteAutenticacionConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Autenticacion.ClienteAutenticacionConfig.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/LunderoSDK.Autenticacion.NetStandard.ClienteAutenticacion.yml",
       "output": {
         ".html": {
@@ -86,6 +126,146 @@
       "output": {
         ".html": {
           "relative_path": "api/LunderoSDK.Autenticacion.NetStandard.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Autenticacion.Respuestas.LoginRespuesta.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Autenticacion.Respuestas.LoginRespuesta.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Autenticacion.Respuestas.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Autenticacion.Respuestas.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Autenticacion.Solicitudes.LoginSolicitud.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Autenticacion.Solicitudes.LoginSolicitud.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Autenticacion.Solicitudes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Autenticacion.Solicitudes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Autenticacion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Autenticacion.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Core.ClienteBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Core.ClienteBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Core.ClienteConfiguracion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Core.ClienteConfiguracion.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Core.ClienteOpciones.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Core.ClienteOpciones.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Core.ClienteUtilitario.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Core.ClienteUtilitario.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Core.Excepciones.ExcepcionServicio.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Core.Excepciones.ExcepcionServicio.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Core.Excepciones.IndicadorError.MotivoError.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Core.Excepciones.IndicadorError.MotivoError.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Core.Excepciones.IndicadorError.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Core.Excepciones.IndicadorError.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Core.Excepciones.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Core.Excepciones.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Core.ILoggerSdk.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Core.ILoggerSdk.html"
         }
       },
       "version": ""
@@ -196,6 +376,66 @@
       "output": {
         ".html": {
           "relative_path": "api/LunderoSDK.Core.NetStandard.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Core.Respuestas.RespuestaApi-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Core.Respuestas.RespuestaApi-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Core.Respuestas.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Core.Respuestas.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Core.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Core.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Encuesta.ClienteEncuesta.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Encuesta.ClienteEncuesta.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Encuesta.ClienteEncuestaBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Encuesta.ClienteEncuestaBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Encuesta.ClienteEncuestaConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Encuesta.ClienteEncuestaConfig.html"
         }
       },
       "version": ""
@@ -406,6 +646,186 @@
       "output": {
         ".html": {
           "relative_path": "api/LunderoSDK.Encuesta.NetStandard.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Encuesta.Respuestas.Alternativa.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Encuesta.Respuestas.Alternativa.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Encuesta.Respuestas.ContenedorValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Encuesta.Respuestas.ContenedorValue.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Encuesta.Respuestas.Encuesta.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Encuesta.Respuestas.Encuesta.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Encuesta.Respuestas.EncuestaDetalleRespuesta.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Encuesta.Respuestas.EncuestaDetalleRespuesta.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Encuesta.Respuestas.EncuestaGuardadaRespuesta.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Encuesta.Respuestas.EncuestaGuardadaRespuesta.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Encuesta.Respuestas.EncuestaRespuesta.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Encuesta.Respuestas.EncuestaRespuesta.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Encuesta.Respuestas.Opcion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Encuesta.Respuestas.Opcion.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Encuesta.Respuestas.PreguntasEncuesta.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Encuesta.Respuestas.PreguntasEncuesta.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Encuesta.Respuestas.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Encuesta.Respuestas.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Encuesta.Solicitudes.ContenidoDataFormulario.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Encuesta.Solicitudes.ContenidoDataFormulario.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Encuesta.Solicitudes.DataFormulario.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Encuesta.Solicitudes.DataFormulario.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Encuesta.Solicitudes.EjecucionTarea.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Encuesta.Solicitudes.EjecucionTarea.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Encuesta.Solicitudes.EncuestaAGuardarSolicitud.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Encuesta.Solicitudes.EncuestaAGuardarSolicitud.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Encuesta.Solicitudes.EncuestaSolicitud.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Encuesta.Solicitudes.EncuestaSolicitud.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Encuesta.Solicitudes.RespuestaEncuesta.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Encuesta.Solicitudes.RespuestaEncuesta.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Encuesta.Solicitudes.TrabajoEjecucion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Encuesta.Solicitudes.TrabajoEjecucion.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Encuesta.Solicitudes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Encuesta.Solicitudes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunderoSDK.Encuesta.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunderoSDK.Encuesta.html"
         }
       },
       "version": ""

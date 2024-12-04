@@ -87,36 +87,43 @@
         <article data-uid="">
 <h1 id="instalación">Instalación</h1>
 
-<p>Para usar el SDK, primero debes compilar el proyecto y generar la DLL. Para ello, sigue los siguientes pasos:</p>
-<h2 id="usando-visual-studio">Usando Visual Studio</h2>
+<p>Para usar el SDK, primero debes generar el paquete NuGet. Para ello, sigue los siguientes pasos:</p>
+<h2 id="generar-un-paquete-nuget">Generar un paquete NuGet</h2>
 <ol>
 <li>Clona el repositorio en tu máquina local.</li>
-<li>Abre el proyecto en Visual Studio.</li>
-<li>Compila el proyecto.</li>
+<li>Abre una terminal y navega hasta la carpeta del proyecto donde se encuentra el archivo de solución (<code>.sln</code>).</li>
+<li>Ejecuta el siguiente comando para generar el paquete NuGet en configuración Release:</li>
+</ol>
+<pre><code class="lang-bash">dotnet pack --configuration Release
+</code></pre>
+<p>Esto creará el archivo <code>.nupkg</code> en el directorio <code>bin/Release</code>.</p>
+<p>Una vez hayas generado el paquete NuGet (<code>.nupkg</code>), puedes añadirlo a tu proyecto de la siguiente manera:</p>
+<h2 id="usando-visual-studio">Usando Visual Studio</h2>
+<ol>
+<li>Copia el archivo <code>.nupkg</code> generado al directorio de tu elección en tu PC.</li>
+<li>Abre Visual Studio y navega a <code>Herramientas</code> &gt; <code>Administrador de paquetes NuGet</code> &gt; <code>Configuración del Administrador de paquetes</code>.</li>
+<li>En la sección <code>Orígenes de paquetes</code>, haz clic en el botón <code>+</code> para agregar un nuevo origen.</li>
+<li>Asigna un nombre al origen (por ejemplo, <code>LocalPackages</code>) y selecciona la ruta del directorio donde copiaste el archivo <code>.nupkg</code>.</li>
+<li>Haz clic en <code>Aceptar</code> para guardar los cambios.</li>
+<li>Abre tu proyecto en Visual Studio.</li>
+<li>Haz clic derecho sobre el proyecto y selecciona <code>Administrar paquetes NuGet</code>.</li>
+<li>Selecciona el origen que acabas de agregar (<code>LocalPackages</code>) en el menú desplegable <code>Origen de paquete</code>.</li>
+<li>Busca el paquete NuGet que generaste e instálalo.</li>
 </ol>
 <h2 id="usando-la-línea-de-comandos">Usando la línea de comandos</h2>
 <ol>
-<li>Clona el repositorio en tu máquina local.</li>
-<li>Abre una terminal y navega hasta la carpeta del proyecto.</li>
-<li>Ejecuta el siguiente comando:</li>
+<li>Copia el archivo <code>.nupkg</code> generado al directorio de tu elección en tu PC.</li>
+<li>Abre una terminal y navega hasta la carpeta de tu proyecto.</li>
+<li>Configura el origen del paquete NuGet ejecutando el siguiente comando:</li>
 </ol>
-<pre><code class="lang-bash">dotnet build
+<pre><code class="lang-bash">dotnet nuget add source &lt;ruta al directorio con el .nupkg&gt; -n LocalPackages
 </code></pre>
-<p>Una vez hayas generado la DLL, puedes añadirla a tu proyecto de la siguiente manera:</p>
-<h2 id="usando-visual-studio-1">Usando Visual Studio</h2>
-<ol>
-<li>Abre tu proyecto en Visual Studio.</li>
-<li>Haz clic derecho sobre el proyecto y selecciona &quot;Agregar referencia&quot;.</li>
-<li>Haz clic en &quot;Examinar&quot; y selecciona la DLL que has generado.</li>
-<li>Haz clic en &quot;Aceptar&quot;.</li>
+<ol start="4">
+<li>Añade el paquete NuGet a tu proyecto ejecutando el siguiente comando:</li>
 </ol>
-<h2 id="usando-la-línea-de-comandos-1">Usando la línea de comandos</h2>
-<ol>
-<li>Navega hasta la carpeta de tu proyecto.</li>
-<li>Ejecuta el siguiente comando:</li>
-</ol>
-<pre><code class="lang-bash">dotnet add reference &lt;ruta a la DLL de Lundero&gt;
+<pre><code class="lang-bash">dotnet add package &lt;nombre del paquete&gt;
 </code></pre>
+<p>Esto configurará el origen del paquete y añadirá el paquete NuGet a tu proyecto.</p>
 
 </article>
 
